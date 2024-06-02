@@ -1,0 +1,65 @@
+body {
+    font-family: 'Roboto Mono', monospace;
+    background-color: #0d0d0d;
+    color: #b5b5b5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.timer-container {
+    position: relative;
+}
+
+.timer {
+    font-size: 4rem;
+    text-align: center;
+    padding: 20px;
+    animation: glitch 1s infinite;
+}
+
+@keyframes glitch {
+    2%, 64% {
+        transform: translate(2px, 0) skew(0deg);
+    }
+    4%, 60% {
+        transform: translate(-2px, 0) skew(0deg);
+    }
+    62% {
+        transform: translate(0, 0) skew(5deg);
+    }
+}
+
+.timer i {
+    margin-right: 10px;
+}
+
+.start-btn,
+.pause-btn,
+.reset-btn {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-left: 10px;
+}
+
+.start-btn:hover,
+.pause-btn:hover,
+.reset-btn:hover {
+    background-color: #45a049;
+}
+
+.timer-mode {
+    font-size: 1.5rem;
+    margin-top: 10px;
+}

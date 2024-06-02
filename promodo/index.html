@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pomodoro Timer</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-900 text-white">
+    <div class="flex flex-col items-center justify-center h-screen">
+        <div class="timer-container flex flex-col items-center">
+            <div class="timer flex items-center justify-center text-4xl bg-gray-800 px-4 py-2 rounded-lg mb-4">
+                <i class="fas fa-clock mr-2"></i> <span class="timer-text">25:00</span>
+            </div>
+            <input type="number" class="custom-time w-48 px-2 py-1 text-black bg-gray-300 rounded-md mb-4" placeholder="Custom Time (minutes)">
+            <div class="flex">
+                <button class="start-btn bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded mr-2"><i class="fas fa-play mr-2"></i> Start</button>
+                <button class="pause-btn bg-yellow-500 hover:bg-yellow-600 text-white font-bold py-2 px-4 rounded mr-2"><i class="fas fa-pause mr-2"></i> Pause</button>
+                <button class="reset-btn bg-red-500 hover:bg-red-600 text-white font-bold py-2 px-4 rounded mr-2"><i class="fas fa-redo mr-2"></i> Reset</button>
+                <div class="timer-mode ml-4">Pomodoro</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>

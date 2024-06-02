@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Friends Budget and Bill Splitter</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 min-h-screen flex items-center justify-center">
+    <div class="container mx-auto p-4">
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+            <h1 class="text-2xl font-bold mb-4">Friends Budget and Bill Splitter</h1>
+            <div id="friends-list" class="mb-4">
+                <h2 class="text-xl font-semibold mb-2">Friends</h2>
+                <div id="friends-container" class="space-y-2">
+                    <!-- Friends will be listed here -->
+                </div>
+                <button id="add-friend" class="mt-2 bg-blue-500 text-white px-4 py-2 rounded">Add Friend</button>
+            </div>
+            <div id="bills-list" class="mb-4">
+                <h2 class="text-xl font-semibold mb-2">Bills</h2>
+                <table class="min-w-full bg-white">
+                    <thead>
+                        <tr>
+                            <th class="py-2">Description</th>
+                            <th class="py-2">Amount</th>
+                            <th class="py-2">Paid by</th>
+                            <th class="py-2">Action</th>
+                        </tr>
+                    </thead>
+                    <tbody id="bills-container">
+                        <!-- Bills will be listed here -->
+                    </tbody>
+                </table>
+                <button id="add-bill" class="mt-2 bg-green-500 text-white px-4 py-2 rounded">Add Bill</button>
+            </div>
+            <div id="result" class="mt-4">
+                <h2 class="text-xl font-semibold mb-2">Result</h2>
+                <div id="split-result" class="p-4 bg-gray-400 rounded-lg">
+                    <!-- Split result will be displayed here -->
+                </div>
+                <div id="detailed-totals" class="p-4 bg-gray-200 rounded-lg mt-4">
+                    <!-- Detailed totals will be displayed here -->
+                </div>
+            </div>
+            <div class="flex justify-between mt-4">
+                <button id="save-data" class="bg-purple-500 text-white px-4 py-2 rounded">Save Data</button>
+                <button id="load-data" class="bg-orange-500 text-white px-4 py-2 rounded">Load Data</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
